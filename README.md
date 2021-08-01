@@ -1,7 +1,7 @@
 ---
 Alison Vandromme : CryptoTracker App 
 Date: April 2021
-Licence: MIT
+License: MIT
 ---
 
 # Alison Vandromme - CryptoTracker App
