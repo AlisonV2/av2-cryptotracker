@@ -24,7 +24,7 @@ composer install
 ```
 - Setup database connection in .env
 
-- Replace API_KEY in src/Services/CmcService.php
+- Replace API_KEY in src/Service/CmcService.php
 
 ## License
 
