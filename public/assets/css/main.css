@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Akzidenz-Grotesk BQ';
+    src: local('Akzidenz-Grotesk BQ Bold Condensed'), local('Akzidenz-Grotesk-BQ-Bold-Condensed'),
+        url('AkzidenzGroteskBQ-BdCnd.woff2') format('woff2'),
+        url('AkzidenzGroteskBQ-BdCnd.woff') format('woff'),
+        url('AkzidenzGroteskBQ-BdCnd.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: rgb(16, 15, 15);
+    color: rgb(239, 239, 239);
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.8rem;
+}
+
+
+/*Login Form*/
+h3 {   
+    padding-top: 3rem;
+} 
+
+label {
+    padding-bottom: 1rem;
+}
+
+main {
+    text-align: center;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color:rgb(239, 239, 239);
+}
+
+/* Accueil-Navbar */
+
+nav {
+    width: 100%;
+    padding-right: 1em;
+    padding-left: 1em;
+    box-shadow: 0 2px 2px -2px rgba(255,255,255,.5)
+}
+
+.navbar-brand, .nav-item a, .navbar-brand:hover {
+    text-decoration: none;
+    color: rgb(239, 239, 239);
+}
+
+.navbar-brand {
+    font-family: 'Akzidenz-Grotesk BQ';
+    font-size: 1.8rem;
+}
+
+.fas.fa-pen {
+    font-size: 20px;
+}
+
+.fas.fa-plus {
+    font-size: 20px;
+}
+
+.fas.fa-sign-out-alt {
+    font-size: 20px;
+}
+
+/* Accueil header */
+
+header {
+    height: 7.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(headerbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Accueil -- Table global styling */
+
+.table {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color:rgb(239, 239, 239);
+    border-color: rgba(255, 255, 255, 0.1);
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 1.2rem;
+}
+
+.table tr {
+    line-height: 2.3rem;
+}
+
+/* Accueil -- Logo area styling */
+
+span.currency {
+    font-weight: normal!important;
+    font-size: 14px!important;
+}
+
+.logo {
+    height: 1em;
+    margin-right: 0.5em;
+    border-radius: 50%;
+}
+
+
+/* Accueil -- Arrows styling */
+
+td.arrow {
+    text-align: end;
+}
+
+.arrow-up {
+    height: 12px;
+}
+
+.arrow-down {
+    height: 17px;
+}
+
+/* Close icon -- Add, Remove & Gains pages */
+
+.fas.fa-times, .fas.fa-times:hover{
+    text-decoration: none;
+    color: rgb(239, 239, 239);
+    padding-top: 0.5rem;
+    font-size: 1.7rem;
+}
+
+/* Form -- Add & Remove pages */
+
+form {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 4.6rem;
+}
+
+.form-control {
+    background-color:  rgb(16, 15, 15)!important;
+    color:rgb(239, 239, 239)!important;
+    font-size: 14px;
+    line-height: 1.7rem;
+    border-bottom: 1px solid rgb(239, 239, 239);
+    border-top: 1px solid rgba(255, 255, 255, 0.3); 
+    border-right: 1px solid rgba(255, 255, 255, 0.3); 
+    border-left: 1px solid rgba(255, 255, 255, 0.3); 
+    padding-left: 2rem;
+}
+
+::placeholder {
+    color: rgb(239, 239, 239)!important;
+    opacity: 1!important;
+}
+
+/* Form input Icons */
+
+.fas.fa-euro-sign, .fas.fa-coins, .fas.fa-search {
+    color: rgba(255, 255, 255, 0.5); 
+}
+
+.icon {
+    position: absolute;
+    display: flex;
+    padding-top: 0.6rem;
+    padding-left: 0.5rem;
+}
+
+/* "Ajouter" btn */ 
+
+.btn {
+    background-color: #707070;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin-top: 15rem;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Valider btn */
+
+.btn.btn-light {
+    background-color:rgb(239, 239, 239);
+    border-radius: 8px;
+    margin-top: 15rem;
+}
+
+/* Chart */
+
+#chart {
+    width : 90vw;
+    margin: 0 auto;
+    margin-top: 8rem;
+}
+
+.chartjs-render-monitor {
+    padding-left : 2rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}

@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello TransactionController!{% endblock %}
+
+{% block body %}
+
+<!-- Nav Start -->
+      <nav class="navbar navbar-expand">
+        <a href="{{ path('home') }}" aria-label="Close"><i class="fas fa-times"></i></a>
+        <h2>Ajouter une transaction</h2>
+      </nav>
+  <!-- Nav End -->
+
+  <!-- Form Start -->
+  {{ form_start(form) }}
+      <main class="container-fluid">
+        <div class="form-group">
+           <span class="icon"><i class="fas fa-search"></i></span>
+              {{ form_widget(form.name) }}
+              {{ form_errors(form.name) }}
+        </div>
+        <div class="form-group">
+            <span class="icon"><i class="fas fa-coins"></i></span>
+              {{ form_widget(form.quantity) }}
+              {{ form_errors(form.quantity) }}
+
+        </div class="form-group">
+        <span class="icon"><i class="fas fa-euro-sign"></i></span>
+              {{ form_widget(form.purchase_price) }}
+              {{ form_errors(form.purchase_price) }}
+        </div>
+             {{ form_widget(form.submit, { 'label': 'Ajouter' }) }}
+</main>
+    {{ form_end(form) }}
+    <!-- Form End -->
+{% endblock %}

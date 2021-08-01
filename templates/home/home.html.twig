@@ -1,0 +1,86 @@
+{% extends 'base.html.twig' %}
+
+
+{% block title %}Tableau de bord{% endblock %}
+
+{% block body %}
+<!-- Navbar start -->
+    <nav class="navbar navbar-expand">
+        <div class="container-fluid">
+            <h1 class="navbar-brand">Crypto Tracker</h1>
+            <ul class="navbar-nav">
+                <li class="nav-item px-3"><a href="{{ path('removetransaction') }}"> <i class="fas fa-pen"></i></a></li>
+                <li class="nav-item px-3"><a href="{{ path('addtransaction')}}"> <i class="fas fa-plus"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+    <!-- Header section start -->
+    <header class="container-fluid">
+            <h1><a href="{{ path('chart') }}"> 
+                {{ total|round(2, 'floor') }} €
+          </a></h1>
+    </header>
+    <!-- Header section end -->
+
+    <div class="container-fluid">
+      <table class="table">
+        <tbody>
+          {% for transaction in transactions %}
+            <tr>
+                <td><img class="logo" src="{{ asset('./assets/img/') }}{{ transaction.name }}.png">{{ transaction.name }} <span class="currency">
+                {% if transaction.name == 'BTC' %}
+                    (Bitcoin)
+                {% elseif transaction.name == 'ETH' %}
+                    (Ethereum)
+                {% elseif transaction.name == 'XRP' %}
+                    (Ripple)
+                {% else %}
+                     Aucune donnée disponible
+                {% endif %}
+                </span></td>
+                <td class="arrow">
+
+                {% if transaction.name == 'BTC' %}
+                   {% if transaction.getPurchasePrice > (currentBTCPrices * 1.5) %}
+                <img class="arrow-up" src="{{ asset('./assets/img/arrow-up.png') }}"><img class="arrow-up" src="{{ asset('assets/img/arrow-up.png') }}"></td>
+                   {% elseif transaction.getPurchasePrice > currentBTCPrices %}
+                <img class="arrow-up" src="{{ asset('./assets/img/arrow-up.png') }}">
+                   {% elseif transaction.getPurchasePrice < currentBTCPrices %}
+                <img class="arrow-down" src="{{ asset('./assets/img/arrow-down.png') }}">
+                   {% else %}
+                <img class="arrow-up" src="{{ asset('./assets/img/arrow-up.png') }}">
+                {% endif %}
+
+                {% elseif transaction.name == 'ETH' %}
+                   {% if transaction.getPurchasePrice > (currentETHPrices * 1.5) %}
+                <img class="arrow-up" src="{{ asset('./assets/img/arrow-up.png') }}"><img class="arrow-up" src="{{ asset('assets/img/arrow-up.png') }}"></td>
+                   {% elseif transaction.getPurchasePrice > currentETHPrices %}
+                <img class="arrow-up" src="{{ asset('./assets/img/arrow-up.png') }}">
+                   {% elseif transaction.getPurchasePrice < currentETHPrices %}
+                <img class="arrow-down" src="{{ asset('./assets/img/arrow-down.png') }}">
+                   {% else %}
+                <img class="arrow-up" src="{{ asset('./assets/img/arrow-up.png') }}">
+                {% endif %}
+
+                {% elseif transaction.name == 'XRP' %}
+                   {% if transaction.getPurchasePrice > (currentXRPPrices * 1.5) %}
+                <img class="arrow-up" src="{{ asset('./assets/img/arrow-up.png') }}"><img class="arrow-up" src="{{ asset('./public/assets/img/arrow-up.png') }}"></td>
+                   {% elseif transaction.getPurchasePrice > currentXRPPrices %}
+                <img class="arrow-up" src="{{ asset('./assets/img/arrow-up.png') }}">
+                   {% elseif transaction.getPurchasePrice < currentXRPPrices %}
+                <img class="arrow-down" src="{{ asset('./assets/img/arrow-down.png') }}">
+                   {% else %}
+                <img class="arrow-up" src="{{ asset('./assets/img/arrow-up.png') }}">
+                {% endif %}
+            </tr>
+            {% else %}
+                <img class="arrow-up" src="{{ asset('./assets/img/arrow-up.png') }}">
+            {% endif %}
+         {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <!-- Table section end -->
+
+{% endblock %}

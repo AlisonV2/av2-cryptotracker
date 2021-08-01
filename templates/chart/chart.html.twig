@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ChartController!{% endblock %}
+
+{% block body %}
+  <!-- Nav Start -->
+     <nav class="navbar navbar-expand">
+       <a href="{{ path('home') }}" aria-label="Close"><i class="fas fa-times"></i></a>
+       <h2>Vos gains</h2>
+     </nav>
+  <!-- Nav End -->
+
+  <!-- Chart Start -->
+
+    <div id="chart">
+          {{ render_chart(chart) }}
+    </div>
+
+  <!-- Chart End -->
+
+{% endblock %}

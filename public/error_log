@@ -1,0 +1,19 @@
+[06-Apr-2021 17:39:40 Europe/Berlin] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.0". You are running 7.2.34. in /home/tgyfkqlr/public_html/alison404/vendor/composer/platform_check.php on line 24
+[06-Apr-2021 17:40:53 Europe/Berlin] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.0". You are running 7.2.34. in /home/tgyfkqlr/public_html/alison404/vendor/composer/platform_check.php on line 24
+[06-Apr-2021 17:40:58 Europe/Berlin] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.0". You are running 7.2.34. in /home/tgyfkqlr/public_html/alison404/vendor/composer/platform_check.php on line 24
+[06-Apr-2021 20:35:45 Europe/Berlin] PHP Fatal error:  Uncaught Symfony\Component\Dotenv\Exception\PathException: Unable to read the "/home/tgyfkqlr/cryptotracker.alisonvandromme.com/.env" environment file. in /home/tgyfkqlr/cryptotracker.alisonvandromme.com/vendor/symfony/dotenv/Dotenv.php:565
+Stack trace:
+#0 /home/tgyfkqlr/cryptotracker.alisonvandromme.com/vendor/symfony/dotenv/Dotenv.php(92): Symfony\Component\Dotenv\Dotenv->doLoad()
+#1 /home/tgyfkqlr/cryptotracker.alisonvandromme.com/vendor/symfony/dotenv/Dotenv.php(114): Symfony\Component\Dotenv\Dotenv->load()
+#2 /home/tgyfkqlr/cryptotracker.alisonvandromme.com/vendor/symfony/dotenv/Dotenv.php(157): Symfony\Component\Dotenv\Dotenv->loadEnv()
+#3 /home/tgyfkqlr/cryptotracker.alisonvandromme.com/public/index.php(10): Symfony\Component\Dotenv\Dotenv->bootEnv()
+#4 {main}
+  thrown in /home/tgyfkqlr/cryptotracker.alisonvandromme.com/vendor/symfony/dotenv/Dotenv.php on line 565
+[06-Apr-2021 20:36:50 Europe/Berlin] PHP Fatal error:  Uncaught Symfony\Component\Dotenv\Exception\PathException: Unable to read the "/home/tgyfkqlr/cryptotracker.alisonvandromme.com/.env" environment file. in /home/tgyfkqlr/cryptotracker.alisonvandromme.com/vendor/symfony/dotenv/Dotenv.php:565
+Stack trace:
+#0 /home/tgyfkqlr/cryptotracker.alisonvandromme.com/vendor/symfony/dotenv/Dotenv.php(92): Symfony\Component\Dotenv\Dotenv->doLoad()
+#1 /home/tgyfkqlr/cryptotracker.alisonvandromme.com/vendor/symfony/dotenv/Dotenv.php(114): Symfony\Component\Dotenv\Dotenv->load()
+#2 /home/tgyfkqlr/cryptotracker.alisonvandromme.com/vendor/symfony/dotenv/Dotenv.php(157): Symfony\Component\Dotenv\Dotenv->loadEnv()
+#3 /home/tgyfkqlr/cryptotracker.alisonvandromme.com/public/index.php(10): Symfony\Component\Dotenv\Dotenv->bootEnv()
+#4 {main}
+  thrown in /home/tgyfkqlr/cryptotracker.alisonvandromme.com/vendor/symfony/dotenv/Dotenv.php on line 565
