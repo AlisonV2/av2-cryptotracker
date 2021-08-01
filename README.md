@@ -13,7 +13,7 @@ Bachelor's Final Project : CryptoWallet in Symfony, using CoinMarketCap's API an
 - CoinMarketCap's API
 - ChartJS
 - CRUD (MySQL)
-- Cron's job
+- Cron's job for daily storage
 
 ## How to use
 
